@@ -151,7 +151,7 @@ const PROJECTS = [
     index: '05',
     title: 'Meghalaya Real Estate Regulatory Authority',
     subtitle: 'MeghRERA Statutory Portal',
-    url: 'https://meghrera.org.in/Demo/',
+    url: 'https://meghrera.org.in/',
     year: '2025',
     role: 'GovTech Web Portal',
     desc: 'Statutory public regulatory authority portal developed for the Government of Meghalaya Real Estate Regulatory Authority, facilitating transparent disclosures and consumer protection.',
