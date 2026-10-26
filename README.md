@@ -1,3 +1,9 @@
-## Hi there 👋
-i code, i vibe, i strum, i write. thanks. 
-https://www.tumblr.com/joaaq?source=share
+# G. Joachim DKhar
+
+Full-stack developer and product builder based in Shillong.
+
+Specializing in point-of-sale platforms, kitchen trackers, automated queue and booking systems, Android mobile applications, and statutory portals.
+
+- Website: https://joa111.github.io
+- Writings: https://www.tumblr.com/joaaq
+- Contact: gjdkhar@gmail.com
