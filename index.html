@@ -184,19 +184,34 @@
   </main>
 
   <!-- Fullscreen Screenshot Viewer Modal -->
-  <div id="viewerModal" class="viewer-modal" role="dialog" aria-modal="true" aria-label="Project Screenshot Viewer">
+  <div id="viewerModal" class="viewer-modal" role="dialog" aria-modal="true" aria-label="Project Screenshot Viewer" onclick="handleBackdropClick(event)">
     <div class="viewer-header">
       <div class="viewer-title-info">
         <span id="viewerTitle" class="viewer-title">Project Screenshot</span>
-        <span id="viewerCaption" class="viewer-caption">Caption</span>
+        <div class="viewer-meta-row">
+          <span id="viewerCounterBadge" class="viewer-counter-badge">01 / 01</span>
+          <span id="viewerCaption" class="viewer-caption">Caption</span>
+        </div>
       </div>
-      <button type="button" class="viewer-close-btn" onclick="closeViewer()" aria-label="Close modal">✕</button>
+      <div class="viewer-header-actions">
+        <span class="viewer-keyboard-tip">← / → to browse • Esc to close</span>
+        <button type="button" class="viewer-close-btn" onclick="closeViewer()" aria-label="Close modal">✕</button>
+      </div>
     </div>
 
     <div id="viewerStage" class="viewer-stage">
-      <button type="button" class="viewer-btn viewer-prev" onclick="prevViewerImage()" aria-label="Previous image">←</button>
-      <img id="viewerImage" class="viewer-img" src="" alt="Project Screenshot Preview" />
-      <button type="button" class="viewer-btn viewer-next" onclick="nextViewerImage()" aria-label="Next image">→</button>
+      <button type="button" class="viewer-btn viewer-prev" onclick="prevViewerImage()" aria-label="Previous image">‹</button>
+      <div class="viewer-img-wrap">
+        <img id="viewerImage" class="viewer-img" src="" alt="Project Screenshot Preview" />
+      </div>
+      <button type="button" class="viewer-btn viewer-next" onclick="nextViewerImage()" aria-label="Next image">›</button>
+    </div>
+
+    <!-- Modal Thumbnail Guide Strip -->
+    <div class="viewer-footer-bar">
+      <div id="viewerThumbStrip" class="viewer-thumb-strip">
+        <!-- Dynamically rendered -->
+      </div>
     </div>
   </div>
 

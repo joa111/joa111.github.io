@@ -7,20 +7,37 @@ const PROJECTS = [
     id: 'rentnanga',
     index: '01',
     title: 'Rentnanga',
-    subtitle: 'Self-Drive Vehicle Rental Platform',
-    url: 'https://rentnanga.com/',
-    secondaryUrl: 'https://play.google.com/store/apps/details?id=com.gjdkhar.rent_nanga&pcampaignid=web_share',
-    secondaryLabel: 'Play Store App',
+    subtitle: 'Self-Drive Vehicle Rental Mobile Platform',
+    url: null,
+    secondaryUrl: null,
     year: '2025—2026',
-    role: 'Web Platform & Android App',
-    desc: 'Production self-drive car, bike, and scooty rental platform serving Shillong and Meghalaya. Features interactive fleet browsing (4x4 SUVs, sedans, two-wheelers), live Supabase media integration, transparent daily rates, customer review integration, and instant WhatsApp booking.',
+    role: 'iOS & Android App / Supabase Cloud',
+    status: 'App Store & Google Play Production',
+    privateNotice: 'Direct live links currently privatized. Complete Apple App Store and Google Play release screens, user accounts, and in-app vehicle booking workflows featured in the interactive guide below.',
+    desc: 'Production self-drive car, bike, and scooty rental mobile application serving Shillong and Meghalaya. Features native mobile builds published on the Apple App Store and Google Play, interactive fleet browsing (4x4 SUVs, sedans, two-wheelers), real-time Supabase cloud sync, transparent daily rates, advance payment ledger, and instant WhatsApp booking dispatch.',
     bullets: [
-      '<strong>Fleet Discovery & Daily Rates:</strong> Interactive vehicle catalog with real-time specs (Mahindra Thar, Scorpio, Swift, Royal Enfield), security deposit guidelines, and tiered pricing.',
-      '<strong>WhatsApp Instant Booking:</strong> Frictionless reservation funnel routing customer bookings and travel dates directly to dispatch.',
-      '<strong>Cross-Platform Architecture:</strong> Next.js web application deployed at rentnanga.com paired with a native Android app on Google Play.'
+      '<strong>App Store & Google Play Deployments:</strong> Native iOS and Android mobile releases engineered with seamless vehicle catalog browsing and cloud authentication.',
+      '<strong>Fleet Discovery & Daily Rates:</strong> Interactive vehicle catalog with real-time specs (Mahindra Thar Roxx, Scorpio, Baleno, Yamaha Ray ZR, Aprilia SR 125, TVS NTORQ), security deposit guidelines, and tiered pricing.',
+      '<strong>Booking Ledger & Push Notifications:</strong> Full reservation lifecycle tracking with advance payment verification, active rental status, and push notification receipts.',
+      '<strong>Store Showcase:</strong> Live store links temporarily privatized; comprehensive production screenshots and in-app walkthrough provided below.'
     ],
-    tags: ['Next.js', 'Supabase', 'Tailwind CSS', 'Vercel', 'Android SDK', 'WhatsApp API'],
-    screenshots: []
+    tags: ['iOS App Store', 'Google Play', 'Supabase', 'Tailwind CSS', 'Android SDK', 'WhatsApp API'],
+    isPortrait: true,
+    screenshots: [
+      { src: 'assets/rentnanga 1.PNG', caption: 'Apple App Store — Rentnanga: Vehicle Rentals in Shillong (Overview & Ratings)' },
+      { src: 'assets/rentnanga 2.PNG', caption: 'App Store Listing — Version 1.0.1 Release Details & Preview Deck' },
+      { src: 'assets/rentnanga 3.PNG', caption: 'App Store Specifications — Provider: Graciously Joachim Dkhar (Travel)' },
+      { src: 'assets/rentnanga 4.PNG', caption: 'Mobile App Authentication — Sign In & Account Onboarding' },
+      { src: 'assets/rentnanga 5.PNG', caption: 'Mobile Home Screen — Premium Fleet Discovery Portal' },
+      { src: 'assets/rentnanga 6.PNG', caption: 'Fleet Catalog: Two-Wheelers — Aprilia SR 125, Yamaha Ray ZR, TVS NTORQ' },
+      { src: 'assets/rentnanga 7.PNG', caption: 'Fleet Catalog: Four-Wheelers — Maruti Baleno, Mahindra Bolero, Thar Roxx' },
+      { src: 'assets/rentnanga 8.PNG', caption: 'Wishlist & Saved Vehicles — Shortlisted Customer Rides' },
+      { src: 'assets/rentnanga 9.PNG', caption: 'User Account & Settings — Active Bookings & Profile Management' },
+      { src: 'assets/rentnanga 10.PNG', caption: 'Customer Profile View — Verified Credentials & Account Details' },
+      { src: 'assets/rentnanga 11.PNG', caption: 'Profile Editor — Name, Phone & Booking Details Configuration' },
+      { src: 'assets/rentnanga 12.PNG', caption: 'My Rentals Ledger — Booking History, Advance Payments & Status Tracking' },
+      { src: 'assets/rentnanga 13.PNG', caption: 'Push Notifications Center — Payment Receipts & Instant Confirmations' }
+    ]
   },
   {
     id: 'kitchen-pos-group',
@@ -30,6 +47,8 @@ const PROJECTS = [
     url: null,
     year: '2026',
     role: 'Full-Stack POS Systems',
+    status: 'Internal Venue Deployments (Private)',
+    privateNotice: 'Live venue links are restricted to authorized kitchen tablets and staff terminals. Explore the full operational screenshot guides below.',
     desc: 'Bespoke point-of-sale and live kitchen tracking systems built to eliminate paper order chaos in busy food and beverage venues. Features synchronized kitchen displays, table-side billing, live item editors, and multi-format receipt dispatch.',
     bullets: [
       '<strong>Synchronized Kitchen Displays:</strong> Real-time status sync between counter order entry and kitchen preparation.',
@@ -38,17 +57,18 @@ const PROJECTS = [
     ],
     tags: ['POS Systems', 'Kitchen Display', 'WhatsApp API', 'PDF Engine', 'Client Builds'],
     screenshots: [],
-    // Expandable Group for House of Noodles & Click Cafe
+    // Expandable Group for House of Noodles & Click Kitchen
     isGroup: true,
     groupType: 'deployments',
-    expandLabel: '▾ View Deployments: House of Noodles & Click Cafe (2)',
+    expandLabel: '▾ View Deployments: House of Noodles & Click Kitchen (2)',
     collapseLabel: '▴ Hide Deployments',
     subProjects: [
       {
         id: 'house-of-noodles',
         title: 'House of Noodles — Daily Kitchen Tracker & POS',
         url: null,
-        status: 'Client Production (Staff Portal)',
+        status: 'Internal Staff & Kitchen POS (Private)',
+        privateNotice: 'Internal restaurant tool — access restricted to on-site kitchen displays & staff terminals.',
         desc: 'Custom-built real-time kitchen tracking and point-of-sale platform developed for House of Noodles. Replaced paper slips with a synchronized kitchen display, live order statuses (Ongoing / Completed), dynamic menu management, and instant cash memos.',
         bullets: [
           '<strong>Kitchen Workflow Sync:</strong> Real-time order status toggling between "Ongoing" and "Completed".',
@@ -57,6 +77,7 @@ const PROJECTS = [
           '<strong>Menu Management CMS:</strong> Instant catalog updates with price adjustments and category groupings.'
         ],
         tags: ['React/Next.js', 'POS Architecture', 'WhatsApp API', 'PDF Generator'],
+        isPortrait: false,
         screenshots: [
           { src: 'assets/noodles-1.png', caption: 'House of Noodles - Live Kitchen Tracker & Completed Orders' },
           { src: 'assets/noodles-6.png', caption: 'Automated Cash Memo modal with Print, PDF & WhatsApp share' },
@@ -68,20 +89,22 @@ const PROJECTS = [
         ]
       },
       {
-        id: 'click-cafe',
-        title: 'Click Cafe Shillong — POS & Cafe Management',
-        url: 'https://click-cafe.vercel.app/',
-        status: 'Live on Vercel',
-        desc: 'Digital point-of-sale and kitchen operations software built for a premier cafe in Shillong, handling high-turnover table ordering, barista authentication, dynamic menu adjustments, and daily sales auditing.',
+        id: 'click-kitchen',
+        title: 'Click Kitchen Shillong — POS & Cafe Operations',
+        url: null,
+        status: 'Internal Staff & Kitchen Operations (Private)',
+        privateNotice: 'Internal cafe management tool — access restricted to on-duty baristas & store managers.',
+        desc: 'Digital point-of-sale and kitchen operations software built for a premier cafe and kitchen in Shillong, handling high-turnover table ordering, barista authentication, dynamic menu adjustments, and daily sales auditing.',
         bullets: [
           '<strong>Role-Based Staff Access:</strong> Secure credential portal for cafe team members and baristas.',
           '<strong>Live Order Pipeline:</strong> Table order management with instant payment confirmation workflows.',
           '<strong>Category CMS:</strong> Real-time pricing controls across espresso, food items, and daily specials.',
           '<strong>Sales Reporting:</strong> Date-range data exporter generating spreadsheet summaries for audit reconciliation.'
         ],
-        tags: ['POS Operations', 'Web Platform', 'Vercel', 'Data Reports'],
+        tags: ['POS Operations', 'Kitchen Management', 'Vercel', 'Data Reports'],
+        isPortrait: false,
         screenshots: [
-          { src: 'assets/click-7.png', caption: 'Click Cafe - Confirm Payment & Table Order Settlement' },
+          { src: 'assets/click-7.png', caption: 'Click Kitchen - Confirm Payment & Table Order Settlement' },
           { src: 'assets/click-1.png', caption: 'Secure Staff Login Portal' },
           { src: 'assets/click-3.png', caption: 'Menu Management CMS - Espresso, Specials & Food Categories' },
           { src: 'assets/click-8.png', caption: 'Table Billing & Order Pipeline' },
@@ -102,6 +125,7 @@ const PROJECTS = [
     url: 'https://bot-appointment.vercel.app/',
     year: '2026',
     role: 'Full-Stack SaaS Platform',
+    status: 'Live SaaS on Vercel',
     desc: 'Automated self-service appointment scheduling bot linked with an operations dashboard and real-time patient queue management system.',
     bullets: [
       '<strong>Conversational Booking Bot:</strong> Multi-step user onboarding with morning/afternoon slot picking and instant queue tokens.',
@@ -110,6 +134,7 @@ const PROJECTS = [
       '<strong>Search & Filter Engine:</strong> Rapid lookups by client name or reference ID (e.g. APT-MSC3FHQF).'
     ],
     tags: ['Next.js', 'Tailwind CSS', 'Vercel', 'Real-Time Queue', 'Analytics'],
+    isPortrait: false,
     screenshots: [
       { src: 'assets/appointment-6.png', caption: 'Admin Panel - Dashboard Overview with 7-Day Trend Chart' },
       { src: 'assets/appointment-1.png', caption: 'Client-Facing Booking Bot - Interactive Step-by-Step Onboarding' },
@@ -128,9 +153,11 @@ const PROJECTS = [
     index: '04',
     title: 'Order Management & Invoicing',
     subtitle: 'Dalys Digital Agency CRM',
-    url: 'https://order-teal.vercel.app/',
+    url: null,
     year: '2025—',
     role: 'Agency CRM & Invoicing',
+    status: 'Internal Staff CRM & Invoicing (Private)',
+    privateNotice: 'Private internal agency CRM — live link restricted to Dalys Digital management and accounts team.',
     desc: 'Internal client order management, contract tracking, and automated PDF invoicing portal engineered for creative agency Dalys Digital.',
     bullets: [
       '<strong>Custom Service Types:</strong> Flexible pipeline management (Consulting, Marketing, Brand Strategy).',
@@ -138,7 +165,8 @@ const PROJECTS = [
       '<strong>Balance Reconciliation:</strong> Visual tracking of contract totals, payments collected, and outstanding balances.',
       '<strong>Searchable Ledger:</strong> Instant order filtering by client, contact phone, or deadline.'
     ],
-    tags: ['Agency CRM', 'PDF Invoicing', 'Vercel', 'Client Portal'],
+    tags: ['Agency CRM', 'PDF Invoicing', 'Vercel', 'Private Portal'],
+    isPortrait: false,
     screenshots: [
       { src: 'assets/order-1.png', caption: 'Dalys Digital - Order Management Dashboard with Filters & Search' },
       { src: 'assets/order-4.png', caption: 'Dalys Digital Automated Invoice Modal - PDF Download & Print' },
@@ -154,6 +182,7 @@ const PROJECTS = [
     url: 'https://meghrera.org.in/',
     year: '2025',
     role: 'GovTech Web Portal',
+    status: 'Live Statutory Portal',
     desc: 'Statutory public regulatory authority portal developed for the Government of Meghalaya Real Estate Regulatory Authority, facilitating transparent disclosures and consumer protection.',
     bullets: [
       '<strong>Public Registry:</strong> Searchable statutory disclosures of approved residential & commercial projects.',
@@ -171,6 +200,7 @@ const PROJECTS = [
     url: null,
     year: '2025',
     role: 'Web Showcase & Portfolios',
+    status: 'Public Brand Showcases',
     desc: 'High-performance brand showcases and creative portfolio websites built for international lifestyle franchises and digital creative agencies in Shillong.',
     bullets: [
       '<strong>Mobile-First Product Lookbooks:</strong> Curated visual catalogs designed for seamless customer exploration.',
@@ -221,6 +251,7 @@ const PROJECTS = [
     url: 'https://ecom-mang.vercel.app/',
     year: '2025',
     role: 'Web Application Prototype',
+    status: 'Live on Vercel',
     desc: 'Full-featured eCommerce web application showcasing product catalog browsing, persistent cart state, responsive checkout, and administration overview.',
     bullets: [
       '<strong>Catalog & Filters:</strong> Real-time filtering by category, search queries, and inventory stock states.',
@@ -235,6 +266,7 @@ const PROJECTS = [
 let currentGallery = [];
 let currentImageIndex = 0;
 let currentProjectTitle = '';
+let currentProjectId = '';
 
 // Helper to find project or sub-project by ID
 function findProjectOrSubProject(id) {
@@ -246,6 +278,62 @@ function findProjectOrSubProject(id) {
     }
   }
   return null;
+}
+
+// Render Screenshot Slider Component
+function renderScreenshotSlider(p) {
+  const isPortrait = !!p.isPortrait;
+  const count = p.screenshots.length;
+
+  return `
+    <div class="slider-wrapper ${isPortrait ? 'portrait-slider' : 'landscape-slider'}" id="slider-${p.id}">
+      <div class="slider-header-bar">
+        <div class="slider-guide-info">
+          <span class="slider-badge-label">
+            ${isPortrait ? '📱 App Screenshots' : '💻 System Walkthrough'}
+          </span>
+          <span class="slider-counter-pill" id="counter-${p.id}">01 / ${String(count).padStart(2, '0')}</span>
+          <span class="slider-guide-text">← Drag or use arrows • Click image to zoom →</span>
+        </div>
+        <div class="slider-nav-actions">
+          <button type="button" class="slider-nav-btn prev" onclick="slideProject('${p.id}', -1)" aria-label="Previous slide" title="Previous screenshot">‹</button>
+          <button type="button" class="slider-nav-btn next" onclick="slideProject('${p.id}', 1)" aria-label="Next slide" title="Next screenshot">›</button>
+          <button type="button" class="slider-fullscreen-action" onclick="openViewer('${p.id}', 0)" title="Open Fullscreen Gallery">
+            <span>Fullscreen</span>
+            <span>↗</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider-track-wrap">
+        <div class="slider-track ${isPortrait ? 'portrait-track' : 'landscape-track'}" id="track-${p.id}" onscroll="onTrackScroll('${p.id}')">
+          ${p.screenshots.map((s, idx) => `
+            <div class="slider-slide ${isPortrait ? 'portrait-slide' : 'landscape-slide'}" onclick="openViewer('${p.id}', ${idx})" title="${s.caption}">
+              <div class="slide-media-box">
+                <img src="${s.src}" alt="${s.caption}" loading="lazy" />
+                <div class="slide-hover-glass">
+                  <span class="glass-icon">🔍</span>
+                  <span class="glass-text">View High-Res</span>
+                </div>
+              </div>
+              <div class="slide-caption-row">
+                <span class="slide-seq-num">${String(idx + 1).padStart(2, '0')}</span>
+                <span class="slide-seq-caption" title="${s.caption}">${s.caption}</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Quick Interactive Guide Dots -->
+      <div class="slider-dots-rail" id="dots-${p.id}">
+        ${p.screenshots.map((s, idx) => `
+          <button type="button" class="slider-dot-btn ${idx === 0 ? 'active' : ''}" onclick="jumpToSlide('${p.id}', ${idx})" aria-label="Slide ${idx + 1}: ${s.caption}" title="${idx + 1}. ${s.caption}">
+          </button>
+        `).join('')}
+      </div>
+    </div>
+  `;
 }
 
 // Render Project Stream
@@ -270,11 +358,11 @@ function renderProjects() {
                 </a>
               ` : `
                 <span>${p.title}</span>
-                ${isGroup ? `
-                  <span style="font-size:11px; font-weight:500; color:var(--accent-rust); margin-left:4px">[${p.subProjects.length} Deployments]</span>
-                ` : `
-                  <span style="font-size:11px; font-weight:400; color:var(--ink-muted); margin-left:4px">[Staff Tool]</span>
-                `}
+                ${p.status ? `
+                  <span class="badge-status-private">[${p.status}]</span>
+                ` : (isGroup ? `
+                  <span class="badge-status-private">[${p.subProjects.length} Deployments]</span>
+                ` : '')}
               `}
             </h3>
 
@@ -288,6 +376,16 @@ function renderProjects() {
           <span class="project-meta-year">${p.year}</span>
         </div>
 
+        ${p.privateNotice ? `
+          <div class="private-deployment-notice ${p.id === 'rentnanga' ? 'app-store-notice' : ''}">
+            <span class="notice-icon">${p.id === 'rentnanga' ? '📱' : '🔒'}</span>
+            <span class="notice-text">
+              <strong>${p.id === 'rentnanga' ? 'App Store Showcase:' : 'Private Staff Deployment:'}</strong> 
+              ${p.privateNotice}
+            </span>
+          </div>
+        ` : ''}
+
         <p class="project-summary-text">${p.desc}</p>
 
         <ul class="project-bullet-list">
@@ -298,24 +396,7 @@ function renderProjects() {
           ${p.tags.map(t => `<span class="chip">${t}</span>`).join('')}
         </div>
 
-        ${hasScreenshots ? `
-          <div class="screenshot-dock">
-            <div class="screenshot-dock-bar">
-              <span class="dock-label">Screenshots (${p.screenshots.length})</span>
-              <button type="button" class="dock-expand-btn" onclick="openViewer('${p.id}', 0)">
-                <span>View Fullscreen</span>
-                <span>↗</span>
-              </button>
-            </div>
-            <div class="screenshot-strip">
-              ${p.screenshots.map((s, idx) => `
-                <div class="strip-item" onclick="openViewer('${p.id}', ${idx})" title="${s.caption}">
-                  <img src="${s.src}" alt="${s.caption}" loading="lazy" />
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        ` : ''}
+        ${hasScreenshots ? renderScreenshotSlider(p) : ''}
 
         ${isGroup ? `
           <div class="project-expand-action">
@@ -347,8 +428,17 @@ function renderProjects() {
                           <span>${sp.title}</span>
                         `}
                       </h4>
-                      ${sp.status ? `<span style="font-family:var(--font-mono); font-size:10.5px; color:var(--ink-muted);">${sp.status}</span>` : ''}
+                      ${sp.status ? `<span class="badge-status-private">${sp.status}</span>` : ''}
                     </div>
+
+                    ${sp.privateNotice ? `
+                      <div class="private-deployment-notice">
+                        <span class="notice-icon">🔒</span>
+                        <span class="notice-text">
+                          <strong>Internal Venue Tool:</strong> ${sp.privateNotice}
+                        </span>
+                      </div>
+                    ` : ''}
 
                     <p class="sub-project-desc">${sp.desc}</p>
 
@@ -360,24 +450,7 @@ function renderProjects() {
                       ${sp.tags.map(t => `<span class="chip">${t}</span>`).join('')}
                     </div>
 
-                    ${subHasScreenshots ? `
-                      <div class="screenshot-dock">
-                        <div class="screenshot-dock-bar">
-                          <span class="dock-label">Screenshots (${sp.screenshots.length})</span>
-                          <button type="button" class="dock-expand-btn" onclick="openViewer('${sp.id}', 0)">
-                            <span>View Fullscreen</span>
-                            <span>↗</span>
-                          </button>
-                        </div>
-                        <div class="screenshot-strip">
-                          ${sp.screenshots.map((s, idx) => `
-                            <div class="strip-item" onclick="openViewer('${sp.id}', ${idx})" title="${s.caption}">
-                              <img src="${s.src}" alt="${s.caption}" loading="lazy" />
-                            </div>
-                          `).join('')}
-                        </div>
-                      </div>
-                    ` : ''}
+                    ${subHasScreenshots ? renderScreenshotSlider(sp) : ''}
                   </div>
                 `;
               }).join('')}
@@ -408,6 +481,71 @@ function toggleProjectDeck(deckId, btn) {
   }
 }
 
+// Slider Navigation Controls
+function slideProject(projectId, direction) {
+  const track = document.getElementById(`track-${projectId}`);
+  if (!track) return;
+  const slide = track.querySelector('.slider-slide');
+  const slideWidth = slide ? (slide.offsetWidth + 12) : 240;
+  track.scrollBy({ left: direction * slideWidth * 1.5, behavior: 'smooth' });
+}
+
+function jumpToSlide(projectId, index) {
+  const track = document.getElementById(`track-${projectId}`);
+  if (!track) return;
+  const slides = track.querySelectorAll('.slider-slide');
+  if (slides[index]) {
+    const scrollLeft = slides[index].offsetLeft - track.offsetLeft;
+    track.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+  }
+}
+
+// Real-time Slider Position Observer
+const scrollDebounceMap = {};
+function onTrackScroll(projectId) {
+  if (scrollDebounceMap[projectId]) clearTimeout(scrollDebounceMap[projectId]);
+  scrollDebounceMap[projectId] = setTimeout(() => {
+    updateSliderState(projectId);
+  }, 35);
+}
+
+function updateSliderState(projectId) {
+  const track = document.getElementById(`track-${projectId}`);
+  if (!track) return;
+
+  const slides = track.querySelectorAll('.slider-slide');
+  if (!slides || slides.length === 0) return;
+
+  let activeIndex = 0;
+  const scrollLeft = track.scrollLeft;
+
+  slides.forEach((slide, idx) => {
+    const offset = slide.offsetLeft - track.offsetLeft;
+    if (scrollLeft >= offset - 30) {
+      activeIndex = idx;
+    }
+  });
+
+  if (activeIndex < 0) activeIndex = 0;
+  if (activeIndex >= slides.length) activeIndex = slides.length - 1;
+
+  // Update Counter
+  const counter = document.getElementById(`counter-${projectId}`);
+  if (counter) {
+    counter.textContent = `${String(activeIndex + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+  }
+
+  // Update Dots
+  const dotsRail = document.getElementById(`dots-${projectId}`);
+  if (dotsRail) {
+    const dots = dotsRail.querySelectorAll('.slider-dot-btn');
+    dots.forEach((dot, idx) => {
+      if (idx === activeIndex) dot.classList.add('active');
+      else dot.classList.remove('active');
+    });
+  }
+}
+
 // Fullscreen Viewer Handlers
 function openViewer(projectId, index = 0) {
   const project = findProjectOrSubProject(projectId);
@@ -416,8 +554,10 @@ function openViewer(projectId, index = 0) {
   currentGallery = project.screenshots;
   currentProjectTitle = project.title;
   currentImageIndex = index;
+  currentProjectId = projectId;
 
   updateViewerContent();
+  renderViewerThumbs();
 
   const modal = document.getElementById('viewerModal');
   if (modal) {
@@ -434,6 +574,16 @@ function closeViewer() {
   }
 }
 
+function handleBackdropClick(event) {
+  if (
+    event.target.id === 'viewerModal' || 
+    event.target.id === 'viewerStage' || 
+    event.target.classList.contains('viewer-img-wrap')
+  ) {
+    closeViewer();
+  }
+}
+
 function nextViewerImage() {
   if (currentGallery.length <= 1) return;
   currentImageIndex = (currentImageIndex + 1) % currentGallery.length;
@@ -446,10 +596,18 @@ function prevViewerImage() {
   updateViewerContent();
 }
 
+function jumpViewerImage(index) {
+  if (index >= 0 && index < currentGallery.length) {
+    currentImageIndex = index;
+    updateViewerContent();
+  }
+}
+
 function updateViewerContent() {
   const imgEl = document.getElementById('viewerImage');
   const titleEl = document.getElementById('viewerTitle');
   const captionEl = document.getElementById('viewerCaption');
+  const badgeEl = document.getElementById('viewerCounterBadge');
 
   if (!currentGallery[currentImageIndex]) return;
 
@@ -462,8 +620,39 @@ function updateViewerContent() {
     titleEl.textContent = currentProjectTitle;
   }
   if (captionEl) {
-    captionEl.textContent = `${item.caption} (${currentImageIndex + 1} of ${currentGallery.length})`;
+    captionEl.textContent = item.caption;
   }
+  if (badgeEl) {
+    badgeEl.textContent = `${String(currentImageIndex + 1).padStart(2, '0')} / ${String(currentGallery.length).padStart(2, '0')}`;
+  }
+
+  // Update modal thumbs active state
+  const thumbItems = document.querySelectorAll('.modal-thumb-item');
+  thumbItems.forEach((thumb, idx) => {
+    if (idx === currentImageIndex) {
+      thumb.classList.add('active');
+      thumb.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
+    } else {
+      thumb.classList.remove('active');
+    }
+  });
+}
+
+function renderViewerThumbs() {
+  const strip = document.getElementById('viewerThumbStrip');
+  if (!strip) return;
+
+  const project = findProjectOrSubProject(currentProjectId);
+  const isPortrait = project && project.isPortrait;
+
+  strip.innerHTML = currentGallery.map((item, idx) => `
+    <div 
+      class="modal-thumb-item ${isPortrait ? 'portrait-thumb' : ''} ${idx === currentImageIndex ? 'active' : ''}" 
+      onclick="jumpViewerImage(${idx})"
+      title="${idx + 1}. ${item.caption}">
+      <img src="${item.src}" alt="${item.caption}" loading="lazy" />
+    </div>
+  `).join('');
 }
 
 // Keyboard shortcuts for Modal
@@ -476,7 +665,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowLeft') prevViewerImage();
 });
 
-// Touch swipe support for Mobile
+// Touch swipe support for Mobile Modal
 let touchStartX = 0;
 let touchEndX = 0;
 
