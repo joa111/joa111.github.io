@@ -1,4 +1,4 @@
-# G. Joachim DKhar
+# G. Joachim Dkhar
 
 Full-stack developer and product builder based in Shillong.
 

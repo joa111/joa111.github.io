@@ -1,5 +1,5 @@
 /* ==========================================================================
-   G. Joachim DKhar Portfolio - Project Ledger & Interactive Showcase
+   G. Joachim Dkhar Portfolio - Project Ledger & Interactive Showcase
    ========================================================================== */
 
 const PROJECTS = [
