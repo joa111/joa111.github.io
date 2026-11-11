@@ -40,8 +40,37 @@ const PROJECTS = [
     ]
   },
   {
-    id: 'kitchen-pos-group',
+    id: 'gym-management',
     index: '02',
+    title: 'Gym Management & Member Operations',
+    subtitle: 'Mobile CRM & Telegram Push Automation',
+    url: null,
+    secondaryUrl: null,
+    year: '2026',
+    role: 'iOS Mobile App / Telegram Bot Integration',
+    status: 'Internal Club Deployment (Private)',
+    privateNotice: 'Internal gym management app — access restricted to authorized club owners and front-desk devices. Explore the complete operational walkthrough, billing modals, and Telegram push reminder workflows below.',
+    desc: 'Bespoke mobile application engineered for gym and fitness club owners to streamline daily member management, subscription renewals, and attendance operations. Directly integrated with an automated Telegram Bot that dispatches real-time push notifications and automated expiry alerts for upcoming and overdue memberships.',
+    bullets: [
+      '<strong>Telegram Bot Push Automation:</strong> Integrated Telegram bot providing instant background push notifications and scheduled reminders for memberships expiring within 7 days and overdue accounts.',
+      '<strong>Owner Command Dashboard:</strong> High-level operational metrics tracking total members, active subscriptions, reviews needed, and collected revenue with quick-action shortcuts.',
+      '<strong>Member Directory & Profile Ledger:</strong> Searchable member roster with unique IDs (e.g. ID: E051C4), membership validity tracking, and joined/expiry date milestones.',
+      '<strong>Rapid Renewal & Multi-Payment Settlement:</strong> One-tap membership renewals and plan adjustments (Regular, Student, Monthly) with payment recording across Cash, UPI, and Card.'
+    ],
+    tags: ['iOS Mobile App', 'Telegram Bot API', 'Push Notifications', 'Automated Reminders', 'Membership CRM', 'Payment Workflows'],
+    isPortrait: true,
+    screenshots: [
+      { src: 'assets/gym-1.jpg', caption: 'Owner Dashboard — Real-time KPI metrics, active members, revenue tracking, and quick actions' },
+      { src: 'assets/gym-2.jpg', caption: 'Members Directory — Searchable member list, active status indicators, and member creation' },
+      { src: 'assets/gym-3.jpg', caption: 'Member Details — Membership card, ID: E051C4, plan tier, validity timeline, and action controls' },
+      { src: 'assets/gym-4.jpg', caption: 'New Member Registration — Seamless onboarding with client details and tiered plan selection' },
+      { src: 'assets/gym-5.jpg', caption: 'Membership Renewal — Multi-channel payment settlement modal (Cash, UPI, Card)' },
+      { src: 'assets/gym-6.jpg', caption: 'Membership Reminders — Automated tracking for expiring memberships (7 days) and overdue accounts' }
+    ]
+  },
+  {
+    id: 'kitchen-pos-group',
+    index: '03',
     title: 'Kitchen POS & Order Trackers',
     subtitle: 'Hospitality Management Deployments',
     url: null,
@@ -119,7 +148,7 @@ const PROJECTS = [
   },
   {
     id: 'appointment-bot',
-    index: '03',
+    index: '04',
     title: 'AppointmentBot Pro',
     subtitle: 'Smart Queue & Scheduling System',
     url: 'https://bot-appointment.vercel.app/',
@@ -150,7 +179,7 @@ const PROJECTS = [
   },
   {
     id: 'order-teal',
-    index: '04',
+    index: '05',
     title: 'Order Management & Invoicing',
     subtitle: 'Dalys Digital Agency CRM',
     url: null,
@@ -176,7 +205,7 @@ const PROJECTS = [
   },
   {
     id: 'meghrera',
-    index: '05',
+    index: '06',
     title: 'Meghalaya Real Estate Regulatory Authority',
     subtitle: 'MeghRERA Statutory Portal',
     url: 'https://meghrera.org.in/',
@@ -194,7 +223,7 @@ const PROJECTS = [
   },
   {
     id: 'portfolios-group',
-    index: '06',
+    index: '07',
     title: 'Brand & Agency Portfolios',
     subtitle: 'Brand Showcases & Creative Direction',
     url: null,
@@ -244,8 +273,32 @@ const PROJECTS = [
     ]
   },
   {
+    id: 'sur-lyng-a',
+    index: '08',
+    title: 'sur lyng-a',
+    subtitle: 'Digital Chapbook & Poetry Publication',
+    url: 'https://joa111.github.io/sur-lyng-a/',
+    secondaryUrl: 'https://github.com/joa111/sur-lyng-a',
+    secondaryLabel: 'Source Code',
+    year: '2021—2026',
+    role: 'Editorial Web Publication & Creative Dev',
+    status: 'Live Publication on GitHub Pages',
+    desc: 'A bespoke digital chapbook and poetry portfolio compiling 25 original poems exploring vulnerability, memory, and Khasi cultural motifs (tdong duma, kiad-so, kyntien wym lait, Mei Ram-ew). Features a typography-first editorial layout, 5 dynamic color atmosphere palettes, and an interactive bookmarking engine.',
+    bullets: [
+      '<strong>5 Color Atmospheres & Candlelight Mode:</strong> Interactive palette engine (Pine & Amber, Aged Parchment, Midnight Navy, Smoked Espresso, Vintage Burgundy) paired with a warm Candlelight dark reading mode.',
+      '<strong>Interactive Bookmark Drawer:</strong> Client-side bookmarking system with localStorage persistence allowing readers to save, organize, and revisit favored stanzas.',
+      '<strong>Editorial Typography:</strong> Crafted with Cormorant Garamond, EB Garamond, and Courier Prime with subtle micro-interactions and thematic cultural glosses.',
+      '<strong>Zero-Dependency Performance:</strong> Engineered in vanilla JavaScript and CSS custom properties for near-instant static page loads on GitHub Pages.'
+    ],
+    tags: ['Creative Web', 'Interactive Publication', 'Vanilla JS', 'Typography', 'LocalStorage', 'GitHub Pages'],
+    isPortrait: false,
+    screenshots: [
+      { src: 'assets/sur-lyng-a-1.png', caption: 'sur lyng-a — Digital Chapbook Masthead & Featured Poem (Vol. I)' }
+    ]
+  },
+  {
     id: 'ecom-platform',
-    index: '07',
+    index: '09',
     title: 'Ecommerce Platform',
     subtitle: 'Storefront & Back-Office Demo',
     url: 'https://ecom-mang.vercel.app/',
@@ -377,10 +430,10 @@ function renderProjects() {
         </div>
 
         ${p.privateNotice ? `
-          <div class="private-deployment-notice ${p.id === 'rentnanga' ? 'app-store-notice' : ''}">
-            <span class="notice-icon">${p.id === 'rentnanga' ? '📱' : '🔒'}</span>
+          <div class="private-deployment-notice ${p.id === 'rentnanga' || p.id === 'gym-management' ? 'app-store-notice' : ''}">
+            <span class="notice-icon">${p.id === 'rentnanga' || p.id === 'gym-management' ? '📱' : '🔒'}</span>
             <span class="notice-text">
-              <strong>${p.id === 'rentnanga' ? 'App Store Showcase:' : 'Private Staff Deployment:'}</strong> 
+              <strong>${p.id === 'rentnanga' ? 'App Store Showcase:' : (p.id === 'gym-management' ? 'Mobile App Walkthrough:' : 'Private Staff Deployment:')}</strong> 
               ${p.privateNotice}
             </span>
           </div>
